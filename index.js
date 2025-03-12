@@ -738,6 +738,7 @@ setInterval(function () {
     } catch (e) {
     }
 }, 5000)
-appServer.listen(process.env.PORT  8999, "0.0.0.0", () => {
-    console.log("Server is running on port", process.env.PORT  8999);
+appServer.listen(process.env.PORT || 8999, "0.0.0.0", () => {
+  console.log(`Server is running on port ${process.env.PORT || 8999}`);
 });
+
